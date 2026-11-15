@@ -126,3 +126,126 @@
         height: 320px;
     }
 }
+
+/* ===== INTERNSHIPS & EXPERIENCE ===== */
+
+.internships {
+    padding: 100px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-tag {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 5vw, 45px);
+    margin: 15px 0;
+}
+
+.section-heading h2 span {
+    color: #a78bfa;
+}
+
+.section-heading p {
+    color: var(--text-muted, #999);
+}
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    padding: 30px;
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    border-radius: 20px;
+    background: rgba(167, 139, 250, 0.04);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+.experience-date {
+    color: #a78bfa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 8px;
+}
+
+.experience-number {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.experience-content h3 {
+    font-size: 23px;
+    margin: 10px 0 5px;
+}
+
+.experience-content h4 {
+    color: #a78bfa;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.experience-project {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.experience-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-content li {
+    color: var(--text-muted, #999);
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-tags span {
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: rgba(167, 139, 250, 0.12);
+    color: #a78bfa;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+@media (max-width: 650px) {
+    .internships {
+        padding: 70px 5%;
+    }
+
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 22px;
+    }
+}
